@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //example for each
+        var a =[1,2,3,4,5,6,7,8,9]
+        var x=a.forEach(function(a,i){
+            console.log(a,i)
+        })
+        console.log(x);
+         // example for map 
+        var y= a.map(function(b,j){
+            console.log("hello",b,j);
+            return j
+        })
+        console.log(y)
+ 
+        //filter 
+        var q=[1,2,3,4,5,6,7,8,9,10,22,33,44]
+        var x = q.filter(function(p,o){
+            if(p>25){
+                return true
+            }
+        })
+        console.log(q)
+
+        //example of sort
+        var ap = [12,20,77,88,99,44,33,22,11,9,98,3,2,1]
+        ap.sort(function(a,b){
+            if(a>b){
+                return 1
+            }
+            else{
+                return -1
+            }
+        });
+        console.log(ap);
+    </script>
+</body>
+</html>
