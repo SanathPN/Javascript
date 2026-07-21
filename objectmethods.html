@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var ob1 = {
+            firstName : 'sanath',
+            lastName : 'p',
+            Age :   25,
+            place : 'usa'
+        }
+
+         Object.seal(ob1);    // seal can modify the value in the object
+       // Object.freeze(ob1);  // freeze method (camnnot update or add new value)
+        ob1.Age = 47;
+        ob1.city = 'uk';
+        console.log(ob1);
+    </script>
+</body>
+</html>
