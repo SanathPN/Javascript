@@ -1,0 +1,67 @@
+var students = [
+  {
+    firstName: "Liam",
+    lastName: "Miller",
+    age: 20,
+    gender: "Male",
+    image: "https://randomuser.me/api/portraits/men/32.jpg",
+    properties: {
+      major: "Computer Science",
+      gpa: 3.8,
+      enrollmentStatus: "Full-Time",
+      hobbies: ["Coding", "Chess", "Gaming"],
+    },
+  },
+  {
+    firstName: "Sophia",
+    lastName: "Chen",
+    age: 21,
+    gender: "Female",
+    image: "https://randomuser.me/api/portraits/women/44.jpg",
+    properties: {
+      major: "Bioengineering",
+      gpa: 3.9,
+      enrollmentStatus: "Full-Time",
+      hobbies: ["Hiking", "Photography", "Violin"],
+    },
+  },
+  {
+    firstName: "Marcus",
+    lastName: "Johnson",
+    age: 22,
+    gender: "Male",
+    image: "https://randomuser.me/api/portraits/men/68.jpg",
+    properties: {
+      major: "Business Administration",
+      gpa: 3.4,
+      enrollmentStatus: "Part-Time",
+      hobbies: ["Basketball", "Investing", "Cooking"],
+    },
+  },
+  {
+    firstName: "Emma",
+    lastName: "Garcia",
+    age: 19,
+    gender: "Female",
+    image: "https://randomuser.me/api/portraits/women/12.jpg",
+    properties: {
+      major: "Graphic Design",
+      gpa: 3.6,
+      enrollmentStatus: "Full-Time",
+      hobbies: ["Digital Art", "Painting", "Yoga"],
+    },
+  },
+  {
+    firstName: "Jordan",
+    lastName: "Taylor",
+    age: 20,
+    gender: "Non-binary",
+    image: "https://randomuser.me/api/portraits/lego/1.jpg",
+    properties: {
+      major: "Environmental Science",
+      gpa: 3.7,
+      enrollmentStatus: "Full-Time",
+      hobbies: ["Gardening", "Rock Climbing", "Volunteering"],
+    },
+  },
+];
