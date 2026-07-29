@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<label for="cname"> City name:</label>
+<input type="text" id="cname" name="cname" placeholder="Enter city name">
+<button id="but" onclick="handlechange()"> save</button>
+<ul id="d1"> </ul>
+
+<script>
+    // 1. Keep all your locations in ONE single array
+    var city = ["USA", "UK", "India", "China", "Russia"];
+
+    // 2. This function handles displaying the array on the screen
+    function showCities() {
+        var listContainer = document.getElementById("d1");
+        listContainer.innerHTML = ""; // Clear the list so it doesn't duplicate
+
+        // Loop through the array and create an <li> for every single item
+        for (var i = 0; i <= city.length - 1; i++) {
+            var nc = document.createElement("li");
+            nc.innerText = city[i];
+            listContainer.appendChild(nc);
+        }
+    }
+
+    // 3. Run the function once when the page loads to show the default items
+    showCities();
+
+    // 4. Run this when the save button is clicked
+    function handlechange() {
+        var ipfield = document.getElementById("cname");
+        var cityname = ipfield.value.trim();
+
+        if (cityname !== "") {
+            city.push(cityname); // Add the new city to our main array
+            ipfield.value = "";  // Clear the input field
+            
+            showCities();        // Refresh the screen with the updated array
+        }
+    }
+    </script>
+</body>
+</html>

@@ -5,6 +5,7 @@
     <title>Document</title>
 </head>
 <body>
+    <div style="border: 10px solid blueviolet; padding: 20px"; id="d1"></div>
  <script>
     //console.dir(document)
     var a = document.createElement("h1")
@@ -13,15 +14,23 @@
     document.body.appendChild(a);
     console.log(a);
 
-
-
-
-
-
-    var b = document.createElement("h6") // Creation 
+    var b = document.createElement("h2") // Creation 
     b.innerText="How are you?"  // content add
     document.body.appendChild(b); //body to append
     b.style.color = "red";
+     var ar = document.createElement("Hello") 
+    ar.innerText="This is me"  
+var z = document.getElementById("a1");
+z.appendChild(ar)
+console.log(z)
+
+var f = document.createElement("hi")        
+f.innerText=("this is usa");
+
+var y=document.getElementById("d1")
+    y.appendChild(f)
+
+
  </script>
 </body>
 </html>

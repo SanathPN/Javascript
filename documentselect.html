@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1>sai</h1>
+    <h1>sanath</h1>
+    <h2 class="abc">Sana</h2>
+    <h1>adam</h1>
+    <h2 class="abc">john</h2>
+
+    var d= document.getElementsByTagName("h1")
+    d[0].style.color='blue'
+    for(var i=0;i<=d.length-1; i++){
+    d[i].style.color='red'
+    }
+
+    var w = document.getElementsByClassName("abc")
+    console.log(w);
+    for(var j=0; j<=w.length-1; j++){
+        w[j].style.color="blue"
+    } -->
+        <h1 id="heading">Welcome</h1>
+        <button onclick="changeColor()">Change Color</button>
+<script>
+    document.getElementById("heading").innerHTML= "Hello JavaScript";
+    function changeColor (){
+            document.getElementById("heading").style.color="red";
+    }
+</script>
+</body>
+</html>
